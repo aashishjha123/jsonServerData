@@ -1,0 +1,11 @@
+{
+    "user": [
+      {
+        "id": "new",
+        "email": "new@gmail.com",
+        "Password": "new",
+        "cnfpass": "new"
+      }
+    ]
+    
+  }
