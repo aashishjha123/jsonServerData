@@ -66,15 +66,13 @@ export default function Dashboard() {
 
   const navigate = useNavigate();
   const [cards, setCards] = useState([]);
+  const [data, setdata] = useState([]);
 
   useEffect(() => {
 
   }, []);
 
-
-
-
-
+ 
 
   useEffect(() => {
     const username = sessionStorage.getItem('username');
@@ -270,28 +268,36 @@ export default function Dashboard() {
 
 
       <div>
-
-        {cardsData.map((card) => {
+      {/* <div>
+              <button onClick={addData}>Add</button>
+            </div> */}
+        {cardsData.map((cards) => {
           return (
-            <div className='container' style={{display:'column'}}>
+            <>           
+           
+            <div className='container' style={{ display: 'column' }}>
               <div className='row'>
                 <div className='col-sm-6 col-md-4'>
                   <div class="card " style={{ width: "18rem", marginTop: "25px", marginLeft: "20px" }}>
-                    <div class="card-body" key={card.id}>
+                    <div class="card-body" key={cards.id}>
 
-                      <h5 class="card-title">{card.title}</h5>
-                      <h6 class="card-subtitle mb-2 text-muted">{card.subTiltle}</h6>
-                      <p class="card-text">{card.text}</p>
+                      <h5 class="card-title">{cards.title}</h5>
+                      <h6 class="card-subtitle mb-2 text-muted">{cards.subTiltle}</h6>
+                      <p class="card-text">{cards.text}</p>
 
+                      <button className='btn btn-danger' >Add</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
+            </>
 
           )
-        })}
+          
+        })
+      }
 
       </div>
 

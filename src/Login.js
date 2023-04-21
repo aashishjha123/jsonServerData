@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-import users from './db.json'
+// import user from '
 
 export default function Login() {
 
   const [username, usernameUpdate] = useState('');
   const [password, setPassword] = useState('');
 
-  const dataCollection = {users}
+  // const dataCollection = {user}
+  // console.log(user.id);
+
   useEffect(()=>{
     sessionStorage.clear();
   },[])
@@ -20,23 +22,20 @@ export default function Login() {
   
     if(validate()){
       console.log("proceed");
-      if(usernameUpdate===dataCollection)
-      {
+      
 
         fetch("http://localhost:8000/user/"+username).then((res)=>{
           return res.json();
         }).then((resp)=>{
-          console.log(resp);
+          console.log(resp.id === );
           alert("login Succesful")
           sessionStorage.setItem('username',username);
           navigate('/dashboard');
         }).catch((e)=>{
           console.log(e);
         })
-      }
-      else{
-        navigate('/register')
-      }
+      
+      
     }
   }
 

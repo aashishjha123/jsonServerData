@@ -61,7 +61,7 @@ export default function Register() {
       }).then((res)=>{
           alert("succes")
           navigate('/login');
-          sessionStorage.setItem();
+          // sessionStorage.setItem('username',username);
       }).catch((e)=>{
           alert("error check console");
           console.log(e);

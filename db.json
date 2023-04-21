@@ -11,38 +11,24 @@
       "email": "newAa@gmail.com",
       "Password": "asdf",
       "cnfpass": "asdf"
+    },
+    {
+      "id": "ayush",
+      "email": "ayush@gmail.com",
+      "Password": "ayush",
+      "cnfpass": "ayush"
+    },
+    {
+      "id": "anx",
+      "email": "anx@gmail.com",
+      "Password": "ax",
+      "cnfpass": "ax"
+    },
+    {
+      "id": "mama",
+      "email": "mam@gmail.com",
+      "Password": "ana",
+      "cnfpass": "ana"
     }
-  ],
-  "CardsData": [
-    {
-      "title": "hello world",
-      "subTiltle": "By C programming",
-      "text": "I am happy to meet you"
-    },
-    {
-      "title": "hello world",
-      "subTiltle": "By Java programming",
-      "text": "I am happy to meet you"
-    },
-    {
-      "title": "hello world",
-      "subTiltle": "By Python programming",
-      "text": "I am happy to meet you"
-    },
-    {
-      "title": "hello world",
-      "subTiltle": "By PHP programming",
-      "text": "I am happy to meet you"
-    },
-    {
-      "title": "hello world",
-      "subTiltle": "By DOT NET programming",
-      "text": "I am happy to meet you"
-    },
-    {
-      "title": "hello world",
-      "subTiltle": "By ANGULAR programming",
-      "text": "I am happy to meet you"
-    }
-  ]
+  ] 
 }
